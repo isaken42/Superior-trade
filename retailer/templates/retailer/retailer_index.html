@@ -1,0 +1,407 @@
+{% extends "consumer/base.html" %}
+{% load staticfiles %}
+
+{% block style %}<link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/consumer_index.css' %}"/> {% endblock style %}
+
+{% block content %}
+    	<div class="wall row  no-gutters">
+    		<!--left-seller space-->
+  <div class="col-md-3  position-relative  d-none d-lg-block">
+    				<!--upper seller space -->
+    <div class="position-fixed text-center" style="margin-top:20px;margin-left:45px;margin-right:3px;background-color: #ffffff;padding: 0;border-radius: 3px;width: 200px;font-family: arial">
+      <h3 class="headers" style="border-top-right-radius:5px;border-top-left-radius:5px;margin: 2;font-size: 25px">BECOME A SELLER </h3>
+    <div class="text-center" style="font-size: 18px">
+  		<div class="card">
+      <a href='#' style="margin-bottom: 7px">
+    <h6>RETAILER</h6>
+    <small>SELL TO CONSUMERS</small>
+   </a>
+    </div>
+    <div class="card">
+    <a style="margin-bottom: 7px" href='#'>
+    <h6>WHOLESALER</h6>
+    <small>SELL TO RETAILERS</small></a>
+    </div>
+    <div class="card">
+     <a style="margin-bottom: 0px" href='#' >
+    <h6>DISTRIBUTER</h6>
+    <small>SELL TO WHOLESALERS</small>
+     </a>
+   </div>
+    <div class="card">
+      <a style="margin-bottom: 7px" href='#'>
+    <h6>MANUFACTURER</h6>
+    <small>SELL TO DISTRIBUTERS</small></a>
+     </div>
+
+    <div class="card">
+    <a  href='#'>
+    <h6>PRODUCER</h6>
+    <small>SELL TO MANUFACTURERS</small></a>
+    </div>
+  </div>
+    </div>
+    	</div>
+      <div style="clear: both;margin: 0 auto;"></div>
+
+
+    		<!--Center block -->
+    		<div class="col-md-4 d-block center clearfix wall " style="padding-top:3px">
+              
+
+    	<!--Scrollable shop items-->
+    <div id="sPace">
+      <!--shop item-->
+      <div id="sI">
+      	<!--upper image,shopname and location-->
+          <div id="sP">
+          <img src="{% static 'consumer/images/profholder.jpeg' %}" 
+          	class="img-fluid rounded" alt="Responsive image rounded" style="width:10%;"> <small>SHOPNAME<small>(ShopLocation)</small></small>
+        </div>
+        <!--Buying space-->
+        <div class="row">
+        	<!--image left-->
+        	<div class="col">
+        <div id="itImg">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
+        <div class="centered">item</div>
+        </div>
+       <div>
+        <input type="button" class="btn itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div id="desc">
+        <ul id="descUl">
+          <li><small>Size:</small><small> 17 inch</small></li>
+          <li><small>Brand:</small><small> sony</small></li>
+          <li><small>Quality:</small><small> yes</small></li>
+          <li><small>Quantity:</small><small> 20</small></li>
+        </ul>
+        </div>
+
+          <button id="cartBtn" style="margin-top:2px;color:#000" type="button"  class="btn  btn-sm  btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px;"></i></button>
+        </div>
+        <!--right Buy sell sbuttons-->
+        <div class="col-md-4 paySec container">
+        <ul style="list-style-type: none;padding-left: 0pt;">
+          <li><small>ITEMNAME</small></li>
+          <li><small>Available:</small><small>20</small><li>
+          <li><small>PRICE:</small><small>200 ksh</small></li>
+        	<li><button  style="background-color: #39b54a;" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
+        	<li><button style="background-color: #ff0000;" type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
+        	<li><button style="background-color: #0daacb;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+
+        </ul>
+    </div>
+      <!--Cart dialog-->
+       <div id="dialog" title="Basic dialog" style="display: none">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+       </div>
+
+        </div>
+      </div>
+
+  <!--shop item-->
+      <div id="sI" style="background-color: #fafafa;margin-bottom:15px">
+        <!--upper image,shopname and location-->
+          <div style="margin-bottom:5px;border-radius:5px">
+          <img src="{% static 'consumer/images/profholder.jpeg' %}" 
+            class="img-fluid rounded" alt="Responsive image rounded" style="width:10%;"> <small>SHOPNAME<small>(ShopLocation)</small></small>
+        </div>
+        <!--Buying space-->
+        <div class="row">
+          <!--image left-->
+          <div class="col">
+        <div style="text-align: center;position:relative;">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
+        <div class="centered">item</div>
+        </div>
+       <div>
+        <input style="font-size:15px;color:" type="button" class="btn itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
+        <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
+          <li><small>Size:</small><small> 17 inch</small></li>
+          <li><small>Brand:</small><small> sony</small></li>
+          <li><small>Quality:</small><small> yes</small></li>
+          <li><small>Quantity:</small><small> 20</small></li>
+        </ul>
+        </div>
+        </div>
+        <!--right Buy buttons-->
+        <div class="col-md-4 paySec container" style="padding-left: 0pt;margin-right: 10px;">
+        <ul style="list-style-type: none;padding-left: 0pt;">
+          <li><small>ITEMNAME</small></li>
+          <li><small>Available:</small><small>20</small><li>
+          <li><small>PRICE:</small><small>200 ksh</small></li>
+          <li><button  style="background-color: #39b54a;color: #ffff;" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
+          <li><button style="background-color: #ff0000;color: #ffffff; " type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
+          <li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
+        </ul>
+    </div>
+        </div>
+      </div>
+
+
+      <!--shop item-->
+    <div id="sI" style="background-color: #fafafa;margin-bottom:15px">
+        <!--upper image,shopname and location-->
+          <div style="margin-bottom:5px;border-radius:5px">
+          <img src="{% static 'consumer/images/profholder.jpeg' %}" 
+            class="img-fluid rounded" alt="Responsive image rounded" style="width:10%;"> <small>SHOPNAME<small>(ShopLocation)</small></small>
+        </div>
+        <!--Buying space-->
+        <div class="row">
+          <!--image left-->
+          <div class="col">
+        <div style="text-align: center;position:relative;">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
+        <div class="centered">item</div>
+        </div>
+       <div>
+        <input style="font-size:15px;color:" type="button" class="btn itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
+        <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
+          <li><small>Size:</small><small> 17 inch</small></li>
+          <li><small>Brand:</small><small> sony</small></li>
+          <li><small>Quality:</small><small> yes</small></li>
+          <li><small>Quantity:</small><small> 20</small></li>
+        </ul>
+        </div>
+        </div>
+        <!--right Buy sell sbuttons-->
+        <div class="col-md-4 paySec container" style="padding-left: 0pt;margin-right: 10px;">
+        <ul style="list-style-type: none;padding-left: 0pt;">
+          <li><small>ITEMNAME</small></li>
+          <li><small>Available:</small><small>20</small><li>
+          <li><small>PRICE:</small><small>200 ksh</small></li>
+          <li><button  style="background-color: #39b54a;color: #ffff;" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
+          <li><button style="background-color: #ff0000;color: #ffffff; " type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
+          <li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
+        </ul>
+    </div>
+        </div>
+      </div>
+
+      <!--shop item-->
+    <div id="sI" style="background-color: #fafafa;margin-bottom:15px">
+        <!--upper image,shopname and location-->
+          <div style="margin-bottom:5px;border-radius:5px">
+          <img src="{% static 'consumer/images/profholder.jpeg' %}" 
+            class="img-fluid rounded" alt="Responsive image rounded" style="width:10%;"> <small>SHOPNAME<small>(ShopLocation)</small></small>
+        </div>
+        <!--Buying space-->
+        <div class="row">
+          <!--image left-->
+          <div class="col">
+        <div style="text-align: center;position:relative;">
+        <img class="card-img-bottom" src="{% static 'consumer/images/placeholder.jpg' %}" alt="item">
+        <div class="centered">item</div>
+        </div>
+       <div>
+        <input style="font-size:15px;color:" type="button" class="btn itDescBtn" value="ITEM DESCRIPTION">
+         </div>
+        <div style="margin-top:5px" class="createDesc" style="display:none">
+        <ul style="padding-left: 3pt;text-align: left;list-style-type: none;">
+          <li><small>Size:</small><small> 17 inch</small></li>
+          <li><small>Brand:</small><small> sony</small></li>
+          <li><small>Quality:</small><small> yes</small></li>
+          <li><small>Quantity:</small><small> 20</small></li>
+        </ul>
+        </div>
+        </div>
+        <!--right Buy sell sbuttons-->
+        <div class="col-md-4 paySec container" style="padding-left: 0pt;margin-right: 10px;">
+        <ul style="list-style-type: none;padding-left: 0pt;">
+          <li><small>ITEMNAME</small></li>
+          <li><small>Available:</small><small>20</small><li>
+          <li><small>PRICE:</small><small>200 ksh</small></li>
+          <li><button  style="background-color: #39b54a;color: #ffff;" type="button"  class="btn btn-sm btn-block">LIPA NA MPESA</button></li>
+          <li><button style="background-color: #ff0000;color: #ffffff; " type="button"  class="btn btn-sm btn-block">AIRTELMONEY</button></li>
+          <li><button style="background-color: #0daacb;color: #ffffff;" type="button"  class="btn  btn-sm btn-block">LIPA NA T-KASH</button></li>
+          <li><button style="margin-top:10px" type="button"  class="btn  btn-sm btn-block btn-default">ADD TO CART <i class="fa fa-shopping-cart" style="font-size:15px"></i></button></li>
+
+        </ul>
+    </div>
+        </div>
+      </div>
+
+    </div>
+
+      <!--load more stuff-->
+
+      <div class="center text-center text-muted">
+        <i class="fa fa-circle-o-notch fa-pulse fa-2x"></i>
+<span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <!--Right customer space-->
+
+    <div class="col-md-5 container-fluid  position-relative d-none d-sm-block wall" >    	
+     <div  class="position-fixed" style="margin-left:5px;margin-top:2px ">
+
+     	<div style="height:301px;margin: 0 auto;">
+       <!--current cart-->
+  <div class="left" style="background-color: #ffffff;">
+   <h4 class="text-center headers">MY CART  <i class="fa fa-shopping-cart" style="font-size:20px;color:purple"></i></h4>
+    
+    <div class="wrapper">
+  <div class="tContainer">
+    <table >
+      <thead>
+        <tr>
+          <th>
+           Sausage
+            <div>
+              <h1 class="tHeaders"> ITEM</h1>
+            </div>
+          </th>
+          <th>
+            QUANTITY
+            <div class="c2">
+              <h1 class="tHeaders">QUANTITY</h1>
+            </div>
+          </th>
+          <th>
+            PRICE
+            <div>
+               <h1 class="tHeaders">PRICE</h1>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="scrollContent">
+        <tr>
+          <td><a href="#">Sugar</a></td>
+          <td>   <a href="#"> 1 KG</a></td>
+          <td>100</td>
+        </tr>
+         <tr>
+          <td><a href="#">Sugar</a></td>
+          <td>   <a href="#"> 1 KG</a></td>
+          <td>100</td>
+        </tr>
+         <tr>
+          <td><a href="#">Sause</a></td>
+          <td><a href="#"> 1</a></td>
+        <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>
+            <div>
+              <h1 class="tHeaders">TOTAL</h1>
+            </div>
+          </td>
+          <td>
+            <div></div>
+          </td>
+          <td>
+            <div>
+              <h1 class="tHeaders">300</h1></div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+</div>
+   
+      
+
+ <div style="margin-left:285px;background-color: #ffffff;border-radius:10px; ">
+  <h4 class="headers">PREVIOUS SHOPPING</h4>
+  <div id="puchHist">
+<ul style="list-style: none; padding-left: 3pt;font-size: 18px;">
+    <a href="#"><li>Cras</li></a>
+    <a href="#"><li>Dapi</li></a>
+    <a href="#"><li>Vestibulum</li></a>
+  </ul>
+</div>
+ </div>
+</div>
+<!--lower Personalised Shopping History-->
+<div style="clear: both;margin: 0 auto;"></div>
+     <!-- Next Shop-->
+ <div class="text-center">
+    <h4 class="headers">SIMILAR ITEMS NEXT SHOP(shop name)</h4>
+</div>
+<div id="next-shop">
+<!--horizontal scrollable-->
+    <div class="carosel" id="carosel1">
+   <a class="carosel-control carosel-control-left" href="#" role="button">
+    <span class="carousel-control-prev-icon graphicon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+   <div class="carosel-inner">
+    <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+    </div>
+    <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+   </div>
+   <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+  </div>
+  <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+  </div>
+  <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+  </div>
+  <div class="carosel-item ">
+    <img class="img-thumbnail" src="http://placehold.it/200/f477f4/fff&amp;text=6" />
+  </div>
+  </div>
+   <a class="carosel-control carosel-control-right" href="#" role="button">
+    <span class="carousel-control-next-icon graphicon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="carosel" id="carosel2">
+  <a class="carosel-control carosel-control-left" href="#" role="button">
+    <span class="carousel-control-prev-icon graphicon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+   <div class="carosel-inner">
+    <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+    </div>
+    <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+   </div>
+   <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+  </div>
+  <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+  </div>
+  <div class="carosel-item ">
+    <img class="img-thumbnail" src="{% static 'consumer/images/placeholder.jpg' %}"> 
+  </div>
+  <div class="carosel-item ">
+    <img class="img-thumbnail" src="http://placehold.it/200/f477f4/fff&amp;text=6" />
+  </div>
+  </div>
+  <a class="carosel-control carosel-control-right" href="#" role="button">
+    <span class="carousel-control-next-icon graphicon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+    {% endblock content %}

@@ -1,0 +1,59 @@
+body {
+  background-color:#e9ebee;
+  font-family: Arial;
+  font-size: 20.4px;
+}
+a{
+  color: #365899;
+}
+.navbar a{
+    color: #ffffff;
+    font-family: arial;
+    font-size:17px;  
+}
+
+#search{
+margin-left:217px; 
+margin-bottom:0px;
+width: 300px;   
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -2px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30px;
+    position:absolute; 
+    top: 3px;
+}
+@media screen and (max-width: 700px){
+  #main-navbar {
+     background-color: transparent;
+      clear: both;
+  }
+.logo {
+  background-image: url('https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -2px;
+    height: 30%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30%;
+    position:absolute; 
+    top: 3px;
+}
+@media screen and ( max-width: 1077px){
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and ( max-width: 750px){
+    #main-image {
+        width: 100%;
+    }
+}

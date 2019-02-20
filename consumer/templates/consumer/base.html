@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock title %}Strade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/bootstrap.min.css'%}"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/consumer_style.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'consumer/styles/base.css' %}"/>
+    {% block style %}{% endblock style %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'consumer/images/favicon.ico' %}" />
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+ <!--Nav div-->
+<nav class="navbar p-0   navbar-expand-lg m-0 fixed-top " style="background-color: #4267b2;height: 42px;">
+  <div class="container">
+     <a href="#"> <div class="d-none d-lg-block navbar-brand m-0 logo" style="background-image: url('https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg');"> 
+        </div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+   <div class="input-group" id="search">
+    <input style="height: 25px;margin-top: 8px" type="text" class="form-control" placeholder="Search items in this shop...">
+    <div style="height: 25px;margin-top: 8px" class="input-group-append">
+      <button style="font-size: 10px;text-align: center;" class="btn btn-secondary" type="button">
+        <i class="fa fa-search "></i>
+      </button>
+    </div>
+  </div>
+   <!--left of nav-bar-->
+   
+   <div class="collapse navbar-collapse justify-content-end">
+    <!--profile pic-->
+    <div>
+           <img src="{% static 'consumer/images/profholder.jpeg' %}"          class="img-fluid rounded" alt="Responsive image rounded" style="width:35px;border-radius:50px ">
+  </div>       
+    <ul class="navbar-nav nav">
+      <li class="nav-item">
+      
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link {% block login %}{% endblock login %}" href="{% url 'login' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+      </li>
+    </ul>
+    </div>
+    </div>
+
+</nav>
+<body class="" style="padding-top:43px">
+
+        {% block content %}
+          
+        {% endblock content %}
+</body>
+
+         <script src="{% static 'consumer/scripts/bootstrap.min.js' %}"></script>
+         <script src="{% static 'consumer/scripts/base.js' %}"></script>
+         <script src="{% static 'consumer/scripts/jquery-3.3.1.js' %}"></script>
+         <script src="{% static 'consumer/scripts/index.js' %}"></script>
+           <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+           <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ </html>

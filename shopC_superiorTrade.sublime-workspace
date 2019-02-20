@@ -1,0 +1,204 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/keylogger/SuperiorTrade/shopC>superiorTrade.jpg",
+		"/home/keylogger/Documents/styles.css",
+		"/home/keylogger/Documents/index.html",
+		"/opt/lampp/htdocs/gbydesign_v2/portfolio.php",
+		"/opt/lampp/htdocs/gbydesign_v2/index.php",
+		"/home/keylogger/Desktop/someAPI.6826762.html",
+		"/home/keylogger/Desktop/connectMe/cn.m15.connectme.apk_FILES/assets/wwwroot/assets/css/contact.css",
+		"/home/keylogger/Desktop/connectMe/cn.m15.connectme.apk_FILES/assets/wwwroot/assets/lib/jquery.lazyload.min.js",
+		"/home/keylogger/pythonPractice/randomQuizGenerator.py",
+		"/home/keylogger/Desktop/ZIPcreator/zip-create.py",
+		"/home/keylogger/DAtABASE/gbydesign_v2/assets/php/contact.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/assets/php/ajax-load-more/ajax-load-more.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/assets/bootstrap/js/npm.js",
+		"/home/keylogger/DAtABASE/gbydesign_v2/assets/bootstrap/config.json",
+		"/home/keylogger/DAtABASE/gbydesign_v2/classes/class.DB.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/classes/class.Portfolio.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/logs/index.html",
+		"/home/keylogger/DAtABASE/gbydesign_v2/config.inc.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/inc-top-common-includes.php",
+		"/opt/lampp/htdocs/sqlite.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/index.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/portfolio.php",
+		"/home/keylogger/DAtABASE/gbydesign_v2/classes/index.php",
+		"/opt/lampp/htdocs/test.php"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "shopC>superiorTrade.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
